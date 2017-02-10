@@ -65,7 +65,7 @@
    <nav class="light-blue darken-4 z-depth-2 navbar-fixed" role="navigation">
     <div class="nav-wrapper container" id="top">
       <ul class="right hide-on-med-and-down">
-       <li class="active"><a href="index.html">Inicio<i class="fa fa-home right material-icons" aria-hidden="true"></i></a></li>
+       <li><a href="index.html">Inicio<i class="fa fa-home right material-icons" aria-hidden="true"></i></a></li>
         <ul id="dropdown_sucursales" class="dropdown-content ">
           <li><a href="sucursales.html#Tabasco" class="grey-text text-darken-3">Tabasco</a></li>
           <li><a href="sucursales.html#Veracruz" class="grey-text text-darken-3">Veracruz</a></li>
@@ -74,7 +74,7 @@
          <li><a class="dropdown-button" href="#!" data-activates="dropdown_sucursales">Sucursales<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a href="ofertas.html">Ofertas <i class="fa fa-tag right material-icons" aria-hidden="true"></i></a></li>
         <li><a href="about.html">Sobre nosotros</a></li>
-         <li><a href="contacto.html">Contacto</a></li>
+         <li class="active"><a href="contacto.html">Contacto</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -95,166 +95,96 @@
       </li>
       <li><a href="ofertas.html">Ofertas <i class="fa fa-tag right material-icons" aria-hidden="true"></i></a></li>
       <li><a href="about.html">Sobre nosotros</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
+      <li class="active"><a href="contacto.html">Contacto</a></li>
       <li><a href="avisoprivacidad.html">Aviso de Privacidad<i class="fa fa-certificate right"></i></a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav> 
-
   </header>
 
-  <div class="section no-pad" id="index-banner">
-      
-      <div class="slider">
-        <ul class="slides">
-          <li>
-            <img src="img/carousel/set.jpg"> <!-- random image -->
-            <div class="caption left-align grey-text text-darken-3">
-              <h3>Gran variedad</h3>
-              <h5>Productos de la mejor calidad</h5>
-            </div>
-          </li>
-          <li>
-            <img src="img/carousel/steel-bars.jpeg" alt="Obra Negra"> <!-- random image -->
-            <div class="caption center-align">
-              <h3>Todo para Construcción</h3>
-              <h5 class="light grey-text text-lighten-3"></h5>
-            </div>
-          </li>
-          
-          <li>
-            <img src="img/carousel/stairs-home-loft-lifestyle.jpg"> <!-- random image -->
-            <div class="caption right-align">
-              <h3></h3>
-              <h5 class="light grey-text text-lighten-3"></h5>
-            </div>
-          </li>
-          <li>
-            <img src="img/carousel/pexels-photo-176162.jpeg"> <!-- random image -->
-            <div class="caption right-align">
-              <h3>Lo que necesitas para crear tu ambiente</h3>
-              <h5 class="light grey-text text-lighten-3"></h5>
-            </div>
-          </li>
-          <li>
-            <img src="img/carousel/cables_electricos.jpg"> <!-- random image -->
-            <div class="caption right-align">
-              <h3></h3>
-              <h5 class="light grey-text text-lighten-3"></h5>
-            </div>
-          </li>
-          <li>
-            <img src="img/carousel/photo-1454988501794-2992f706932e.jpg"> <!-- random image -->
-            <div class="caption right-align">
-              <h3></h3>
-              <h5 class="light grey-text text-lighten-3"></h5>
-            </div>
-          </li>
-          <li>
-            <img src="img/carousel/photo-1458245201577-fc8a130b8829.jpg"> <!-- random image -->
-            <div class="caption right-align">
-              <h3>Jardinería</h3>
-              <h5 class="light grey-text text-lighten-3"></h5>
-            </div>
-          </li>
-          <li>
-            <img src="img/carousel/building-construction-building-site-constructing.jpg"> <!-- random image -->
-            <div class="caption right-align">
-              <h3></h3>
-              <h5 class="light grey-text text-lighten-3"></h5>
-            </div>
-          </li> 
-          <li>
-            <img src="img/carousel/painting-black-paint-roller.jpg"> <!-- random image -->
-            <div class="caption right-align">
-              <h3>Pintura</h3>
-            </div>
-          </li>
-        </ul>
-  </div>
-      
-      
-        
-
-      <br> <br>  
-      <h1 class="header center orange-text">Ahorra, Crea y Mejora tu hogar</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">Santandreu es una empresa líder en la comercialización de materiales para la construcción, remodelación y mejoramiento de obras y hogares Con mas de 78 años en el mercado, Santandreu se ha consolidado a lo largo del Sureste de la República Mexicana.</h5>
-      </div>
-    
-      <br><br>
-
-    </div>
-  </div>
-
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
+  <section class="container">
       <div class="row">
-        <div class="col s12 m6 l3">        
-          <div class="icon-block ">
-            <a href="/cfdi/index.html"><h2 class="center light-blue-text text-darken-4"><i class="fa fa-file-text" aria-hidden="true"></i></h2></a>
-            <h5 class="center">Factura Electrónica</h5>
-            <p class="light">Descarga tus archivos pdf y xml</p>
-            <p>Requiere RFC y Folio de Factura </p>
+          <h3>Contacta a la sucursal de tu preferencia</h3>
+          <p>Recuerda consultar antes nuestro <a href="avisoprivacidad.html" target="_blank">Aviso de Privacidad</a></p>
+          <div class="col l8 s12"> 
+              <form action="php/contacto.php" method="post">
+                  <div class="input-field col m12 l6">
+                      <select name="sucursal">
+                        <option value="0" disabled selected>Elija la sucursal</option>
+                        <option value="32">Autoservicio Constitución</option>
+                        <option value="17">Campeche</option>
+                        <option value="5">Cárdenas</option>
+                        <option value="21">Cárdenas Bandala</option>
+                        <option value="12">Carmen Centro</option>
+                        <option value="10">Coatzacoalcos</option>
+                        <option value="16">Coatzacoalcos Centro</option>
+                        <option value="6">Comalcalco</option>
+                        <option value="1">Constitución</option>
+                        <option value="7">Cunduacan</option>
+                        <option value="4">Galeana</option>
+                        <option value="18">Guayabal</option>
+                        <option value="2">Industrial</option>
+                        <option value="23">Jalpa de Méndez</option>
+                        <option value="8">Méndez</option>
+                        <option value="14">Minatitlán</option>
+                        <option value="34">Paraíso Centro</option>
+                        <option value="35">Paraíso Dos Bocas</option>
+                        <option value="3">Periférico</option>
+                      </select>
+                      <label>Sucursal</label>
+                  </div>
+                  <div class="input-field col m12 l6">
+                      <i class="material-icons prefix">account_circle</i>
+                      <input id="icon_prefix" type="text" class="validate" required name="nombre">
+                      <label for="icon_prefix">Nombre</label>
+                  </div>
+                  <div class="input-field col m12 l6">
+                      <i class="material-icons prefix">mail</i>
+                      <input id="icon_prefix" type="text" class="validate" required name = "email">>
+                      <label for="icon_prefix">e-mail</label>
+                  </div>
+                  <div class="input-field col m12 l6">
+                      <i class="material-icons prefix">my_location</i>
+                      <input id="ciudad" type="text" class="validate" name="ciudad">
+                      <label for="ciudad">Ciudad</label>
+                  </div>
+                  <div class="input-field col s12">
+                      <i class="material-icons prefix">message</i>
+                      <textarea id="mensaje" class="materialize-textarea" required name="mensaje"></textarea>
+                      <label for="mensaje">Mensaje</label>
+                  </div>
+                  <button class="btn-large waves-effect waves-light light-blue darken-4 col l2 offset-l5 " type="submit" name="action">
+                    Enviar
+                    <i class="material-icons right">send</i>
+                  </button>
+              </form>
+          </div> 
+
+          <div class="col l4 s12"> 
+              <div class="card"> 
+                  <div class="card-content grey lighten-3">  
+                  <span class="card-title">Otros Contactos</span>                      
+                      <ul> 
+                          <li><i class="fa fa-suitcase left" aria-hidden="true"></i>Bolsa de Trabajo</li> 
+                          <li><a href="mailto:bolsadetrabajo@santandreu.com.mx">bolsadetrabajo@santandreu.com.mx</a></li>
+                          <br>  
+                          <li><i class="material-icons left">insert_emoticon</i>Atención a clientes Comalcalco</li>
+                          <li><a href="mailto:aclientescomalcalco@santandreu.com.mx">aclientescomalcalco@santandreu.com.mx</a></li>
+                          <br>  
+                          <li><i class="material-icons left">monetization_on</i>Ventas Mayoreo</li>
+                          <li><a href="mailto:ventasmayoreo@santandreu.com.mx">ventasmayoreo@santandreu.com.mx</a></li>
+                      </ul> 
+
+                  </div>
+
+              </div>          
 
           </div>
-        </div>
-
-        <div class="col s12 m6 l3">
-          <div class="icon-block">
-            <h2 class="center light-blue-text text-darken-4"><i class="material-icons">supervisor_account</i></h2>
-            <h5 class="center">Asesoría en Productos e Instalación</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m6 l3">
-          <div class="icon-block">
-            <h2 class="center light-blue-text text-darken-4"><i class="fa fa-truck" aria-hidden="true"></i></h2>
-            <h5 class="center">Servicio a Domicilio</h5>
-
-            <p class="light">Entregamos los materiales hasta tu casa</p>
-            <p>Gratis hasta 20 km</p>
-
-          </div>
-        </div>
-
-        <div class="col s12 m6 l3">
-          <div class="icon-block">
-            <h2 class="center light-blue-text text-darken-4"><i class="fa fa-shopping-cart" aria-hidden="true"></i></h2>
-            <h5 class="center">Gran variedad de productos</h5>
-
-            <p class="light">Contamos con una variedad de productos de los más reconocidos proveedores</p>
-            <div class="row center-align">
-              <div class="col s10 offset-s1 m12 center white-text">
-                <a href="#" class="btn center light-blue darken-4 hide-on-med-and-down truncate white-text">Nuestros proveedores <i class="fa fa-users white-text right" aria-hidden="true"></i></a>
-                <a href="#" class="btn center light-blue darken-4 hide-on-large-only"><i class="fa fa-users center" aria-hidden="true"></i></a>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-
-
-
       </div>
+  </section>
 
-
-
-  
-
-    </div>
-    <br><br>
-
-    <div class="section">
-
-    </div>
-  </div>
+ 
 
   <footer class="page-footer yellow darken-2">
     <div class="container">
@@ -306,6 +236,7 @@
    $(document).ready(function(){
       $('.slider').slider({full_width: true, height: 400, Transition: 200});
       $(".dropdown-button").dropdown({constrain_width: false});
+      $('select').material_select();
     });
   </script>
 
